@@ -1,0 +1,170 @@
+:root {
+    background-color: white;
+}
+
+body {
+    margin: 0;
+}
+
+div.parent {
+	display: flex;
+	flex-direction: column;
+}
+
+nav#title-bar {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    height: 60px;
+	border-bottom: 1px solid var(--bd-orange);
+    color: black;
+    background-color: white;
+}
+
+span#icon {
+    margin-left: 30px;
+}
+
+img#logo {
+    width: 30px;
+    height: 30px;
+}
+
+span#title {
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+span#right-text {
+    display: flex;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#sideNavBar-container {
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    height: 100%;
+    width: 255px;
+    background-color: #0A9CEE;
+    position: fixed;
+}
+
+#tabs-container {
+    height: 65%;
+}
+
+.tabsName {
+    font-weight: bolder;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.tabsIcon {
+    padding-left: 26px;
+    height: 28px;
+    width: 32px;
+}
+
+#homeIcon {
+    padding-top: 26px;
+}
+
+#reservationsIcon {
+    padding-top: 26px;
+}
+
+#homeTab {
+    padding-top: 60px;
+    display: flex;
+}
+
+#reservationsTab {
+    padding-top: 30px;
+    display: flex;
+}
+
+#accounts-container {
+    height: 10%;
+    width: 255px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #10547B;
+    font-weight: bold;
+}
+
+#profile-container {
+    padding-left: 30px;
+}
+
+#profile-icon {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+
+#account-name {
+    text-align: left;
+}
+
+#more-accounts-container {
+    padding: 0;
+    padding-right: 20px;
+}
+
+#more-icon {
+    height: 20px;
+    width: 20px;
+}
+
+#homepage-container {
+    display: flex;
+}
+
+div#center-pane {
+    display: flex;
+    margin-left: 255px;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+img#comp-sleep {
+    margin-left: 300px;
+}
+
+p.filler-text {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	color: rgba(5, 5, 48, 0.726);
+	font-weight: 700;
+	font-size: 36px;
+    margin-left: 20px;
+}
+
+p#no-reserve {
+    margin-left: 170px;
+}
+
+p {
+    list-style-type: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+div.lab-reservations {
+    border-style: solid;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
