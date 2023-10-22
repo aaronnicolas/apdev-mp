@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/profile.css">
     <title>SlotGeek</title>
 </head>
 <body>
     <div id="topNavBar-container">
         <div id="logo-name">
-            <a href="#top">
+            <a href="index.html">
                 <img id="logo" src="images/homepage/slotgeek-logo.svg">
             </a>
         </div>
         <div id="slotgeek">
-            <a href="#top">
+            <a href="index.html">
                 SlotGeek
             </a>
         </div>
@@ -28,7 +28,7 @@
             <div id="tabs-container">
                 <div id="homeTab">
                     <img src="images/homepage/home_icon.svg" id="homeIcon" class="tabsIcon">
-                    <a class="tabsName" href="#top"><p>Home</p></a>
+                    <a class="tabsName" href="index.html"><p>Home</p></a>
                 </div>
                 <div id="reservationsTab">
                     <img src="images/homepage/reservations_icon.svg" id="reservationsIcon" class="tabsIcon">
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div id="drop-up-account-menu">
-                <div id="change-user-container" class="drop-up-menu-list" onclick="window.location.href='profile.html';">
+                <div id="change-user-container" class="drop-up-menu-list">
                     <img src="images/homepage/user-icon.svg" id="user-icon" class="drop-up-icon">
                     <p>Edit profile</p>
                 </div>
@@ -57,21 +57,16 @@
                 </div>
             </div>
         </div>
-        <div id="laboratories-container">
-            <div id="laboratory-one" class="laboratory-card">
-                <a href="reserveSystem/reserveLab1.html"><img src="images/homepage/laboratory-1.jpg" class="laboratory-picture"></a>
-                <div class="laboratory-name">Laboratory 1</div>
-                <div>Room 101</div>
+        <div id="edit-profile-section">
+            <div id="user-profile">
+                <img src="images/homepage/profile-picture.png" id="profile-pic-icon">
             </div>
-            <div id="laboratory-two" class="laboratory-card">
-                <a href="reserveSystem/reserveLab2.html"><img src="images/homepage/laboratory-2.jpg" class="laboratory-picture"></a>
-                <div class="laboratory-name">Laboratory 2</div>
-                <div>Room 102</div>
-            </div>
-            <div id="laboratory-three" class="laboratory-card">
-                <a href="reserveSystem/reserveLab3.html"><img src="images/homepage/laboratory-3.jpg" class="laboratory-picture"></a>
-                <div class="laboratory-name">Laboratory 3</div>
-                <div>Room 103</div>
+            <div id="user-details">
+                <p id="user-fullname">John Doe</p>
+                <button id="edit-profile-button">Edit Profile</button>
+                <button id="log-out-button">Log Out</button>
+                <hr>
+                <p id="profile-description">Web Developer</p>
             </div>
         </div>
     </div>
