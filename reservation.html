@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SlotGeek</title>
+        <link rel="stylesheet" href="./style-reservation.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	    <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div class="parent">
+            <nav id="title-bar">
+                <span id="icon">
+                    <img id="logo" src="images/slotgeek-logo.svg">
+                </span>
+                <span id="title">SlotGeek</span>
+                <span id="right-text">About</span>
+            </nav>
+
+            <div id="homepage-container">
+                <div id="sideNavBar-container">
+                    <div id="tabs-container">
+                        <div id="homeTab">
+                            <img src="images/home-icon.svg" id="homeIcon" class="tabsIcon">
+                            <p class="tabsName">Home</p>
+                        </div>
+                        <div id="reservationsTab">
+                            <img src="images/reservations-icon.svg" id="reservationsIcon" class="tabsIcon">
+                            <p class="tabsName">Reservations</p>
+                        </div>
+                    </div>
+                    <div id="accounts-container">
+                        <div id="profile-container">
+                            <img src="images/profile-picture.png" id="profile-icon">
+                        </div>
+                        <div id="accountName-container">
+                            <p id="account-name">John Doe</p>
+                        </div>
+                        <div id="more-accounts-container">
+                            <img src="images/more-horizontal.svg" id="more-icon" onclick="toggleDropUpMenu()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="center-pane">
+                <div id="reserve-container">
+                    <!-- <img id="comp-sleep" src="images/sleeping-laptop.png">
+                    <p class='filler-text' id="no-reserve">You haven't made any reservations in any of the labs yet!</p> -->
+
+                    <p class='filler-text'>
+                        Here are your current resrvations:
+                        <div class ="lab-reservations" id="reserve-1">
+                            <p>Lab Number: 123</p>
+                            <p>Room Number: 1A</p>
+                            <p>Date: October 23 2023</p>
+                            <p>Time: 7:00AM-8:30AM</p>
+                            <p>Seat Number: Terminal 1</p>
+                        </div>
+                        <div class ="lab-reservations" id="reserve-2">
+                            <p>Lab Number: 456</p>
+                            <p>Room Number: 2B</p>
+                            <p>Date: October 24 2023</p>
+                            <p>Time: 3:00PM-4:30PM</p>
+                            <p>Seat Number: Terminal 2</p>
+                        </div>
+                        <div  class ="lab-reservations"id="reserve-3">
+                            <p>Lab Number: 789</p>
+                            <p>Room Number: 3C</p>
+                            <p>Date: October 25 2023</p>
+                            <p>Time: 9:00AM-9:30AM</p>
+                            <p>Seat Number: Terminal 3</p>
+                        </div>
+                        <div  class ="lab-reservations"id="reserve-4">
+                            <p>Lab Number: 123</p>
+                            <p>Room Number: 4D</p>
+                            <p>Date: October 26 2023</p>
+                            <p>Time: 10:00AM-12:30PM</p>
+                            <p>Seat Number: Terminal 4</p>
+                        </div>
+                        <div class ="lab-reservations" id="reserve-5">
+                            <p>Lab Number: 456</p>
+                            <p>Room Number: 5E</p>
+                            <p>Date: October 27 2023</p>
+                            <p>Time: 11:30AM-12:00NN</p>
+                            <p>Seat Number: Terminal 5</p>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
