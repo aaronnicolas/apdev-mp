@@ -1,87 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>SlotGeek</title>
-</head>
-<body>
-    <div id="topNavBar-container">
-        <div id="logo-name">
-            <a href="#top">
-                <img id="logo" src="images/homepage/slotgeek-logo.svg">
-            </a>
-        </div>
-        <div id="slotgeek">
-            <a href="#top">
-                SlotGeek
-            </a>
-        </div>
-        <div id="searchBoxDiv">
-            <input type="text" id="searchBox" placeholder="Search">
-            <img id="searchIcon" src="images/homepage/search.svg">
-        </div>
-    </div>
-    <div id="homepage-container">
-        <div id="sideNavBar-container">
-            <div id="tabs-container">
-                <div id="homeTab">
-                    <img src="images/homepage/home_icon.svg" id="homeIcon" class="tabsIcon">
-                    <a class="tabsName" href="#top"><p>Home</p></a>
-                </div>
-                <div id="reservationsTab">
-                    <img src="images/homepage/reservations_icon.svg" id="reservationsIcon" class="tabsIcon">
-                    <p class="tabsName">Reservations</p>
-                </div>
-            </div>
-            <div id="drop-up-account-menu">
-                <div id="change-user-container" class="drop-up-menu-list" onclick="window.location.href='profile.html';">
-                    <img src="images/homepage/user-icon.svg" id="user-icon" class="drop-up-icon">
-                    <p>Edit profile</p>
-                </div>
-                <div id="log-out-container" class="drop-up-menu-list">
-                    <img src="images/homepage/log-out.svg" id="log-out-icon" class="drop-up-icon">
-                    <p>Log out</p>
-                </div>
-            </div>
-            <div id="accounts-container">
-                <div id="profile-container">
-                    <img src="images/homepage/profile-picture.png" id="profile-icon">
-                </div>
-                <div id="accountName-container">
-                    <p id="account-name">John Doe</p>
-                </div>
-                <div id="more-accounts-container">
-                    <img src="images/homepage/more-horizontal.svg" id="more-icon" onclick="toggleDropUpMenu()">
-                </div>
-            </div>
-        </div>
-        <div id="laboratories-container">
-            <div id="laboratory-one" class="laboratory-card">
-                <a href="reserveSystem/reserveLab1.html"><img src="images/homepage/laboratory-1.jpg" class="laboratory-picture"></a>
-                <div class="laboratory-name">Laboratory 1</div>
-                <div>Room 101</div>
-            </div>
-            <div id="laboratory-two" class="laboratory-card">
-                <a href="reserveSystem/reserveLab2.html"><img src="images/homepage/laboratory-2.jpg" class="laboratory-picture"></a>
-                <div class="laboratory-name">Laboratory 2</div>
-                <div>Room 102</div>
-            </div>
-            <div id="laboratory-three" class="laboratory-card">
-                <a href="reserveSystem/reserveLab3.html"><img src="images/homepage/laboratory-3.jpg" class="laboratory-picture"></a>
-                <div class="laboratory-name">Laboratory 3</div>
-                <div>Room 103</div>
-            </div>
-        </div>
-    </div>
 
-    <script>
-        let dropUpMenu = document.getElementById("drop-up-account-menu");
+<html lang="en"></html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> SlotGeek Login Page </title>
+        <link rel="stylesheet" href="style.css"/>
 
-        function toggleDropUpMenu(){
-            dropUpMenu.classList.toggle("open-menu");
-        }
-    </script>
-</body>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a href="#" class="nav_logo"> SlotGeek </a>
+    
+                <ul class="nav_items">
+                    <li class="nav_items">
+                        <a href="#" class="nav_link"><!--Contacts--></a>    <!-- can be used for future reference -->
+                    </li>
+                </ul>
+                <button class="button" id="form-open">Login</button>
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="form_container">
+                <i class="uil uil-times form_close"></i>
+                <div class="form login_form">
+                    <form action="#">
+                        <h2>Login</h2>
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" required/>
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Enter your password" required/>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <div class="option_field">
+                            <span class="checkbox">
+                                <input type="checkbox" id="check">
+                                <label for="check">Remember me</label>
+                            </span>
+                            <a href="#" class="firgot_pw">Forgot password</a>
+                        </div>
+
+                        <button class="button">Login Now</button>
+
+                        <div class="login_signup">
+                            Don't have an account? <a href="#" id="signup">Signup</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form signup_form">
+                    <form action="#">
+                        <h2>Signup</h2>
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" required/>
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Create password" required/>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Confirm password" required/>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <button class="button">Signup Now</button>
+
+                        <div class="login_signup">
+                            Already have an account? <a href="#" id="login">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
 </html>
