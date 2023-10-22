@@ -5,6 +5,12 @@ var selectedFormattedDate = document.getElementById("selectedFormattedDate");
 var accountNameElement = document.getElementById("account-name");
 var accountName = accountNameElement.textContent;
 
+let dropUpMenu = document.getElementById("drop-up-account-menu");
+    
+function toggleDropUpMenu(){
+    dropUpMenu.classList.toggle("open-menu");
+}
+
 datePicker.addEventListener("change", function() {
     const selectedDateValue = datePicker.value;
 

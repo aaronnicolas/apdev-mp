@@ -1,6 +1,54 @@
 @import url('https://fonts.cdnfonts.com/css/krona-one');
 @import url('https://fonts.cdnfonts.com/css/assistant');
 
+div#center-pane {
+    display: flex;
+    margin-left: 35%;
+    height: 100%;
+}
+
+img#comp-sleep {
+    margin-left: 300px;
+}
+
+.filler-text {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	color: rgba(5, 5, 48, 0.726);
+	font-weight: 700;
+	font-size: 36px;
+    margin-left: 20px;
+}
+
+#no-reserve {
+    margin-left: 170px;
+}
+
+.lab-reservations {
+    display: flex;
+    flex-direction: column;
+    border-style:none;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    background-color: #0A9CEE;
+}
+
+.lab-reservations p{
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.lab-reservations span{
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    font-weight: lighter;
+}
+
 a {
     text-decoration: none;
     color: inherit;

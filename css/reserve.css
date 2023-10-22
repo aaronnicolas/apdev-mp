@@ -216,6 +216,11 @@ body {
     width: 32px;
 }
 
+.side-nav-tabs:hover {
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
 #homeIcon {
     padding-top: 26px;
 }
