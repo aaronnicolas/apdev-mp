@@ -1,5 +1,4 @@
-# apdev-mp
-Laboratory Reservation System Machine Project for APDEV
+# Laboratory Reservation System Machine Project for APDEV
 
 # Lab Reservation System
 
