@@ -1,8 +1,8 @@
 # Laboratory Reservation System Machine Project for APDEV
 
-# Lab Reservation System
+# ReservaLabs
 
-Welcome to the Lab Reservation System, a web application designed to manage reservations for computer lab seats. This system enables registered students to reserve seats in computer labs, while lab technicians can manage reservations and block time slots for walk-in students. Below, you'll find a comprehensive guide to the features and functionalities of this application.
+Welcome to the ReservaLabs, a web application designed to manage reservations for computer lab seats. This system enables registered students to reserve seats in computer labs, while lab technicians can manage reservations and block time slots for walk-in students. Below, you'll find a comprehensive guide to the features and functionalities of this application.
 
 ## Table of Contents
 - [Features](#features)
