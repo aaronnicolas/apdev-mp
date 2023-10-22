@@ -9,10 +9,14 @@
 <body>
     <div id="topNavBar-container">
         <div id="logo-name">
-            <img id="logo" src="images/homepage/slotgeek-logo.svg">
+            <a href="#top">
+                <img id="logo" src="images/homepage/slotgeek-logo.svg">
+            </a>
         </div>
         <div id="slotgeek">
-            SlotGeek
+            <a href="#top">
+                SlotGeek
+            </a>
         </div>
         <div id="searchBoxDiv">
             <input type="text" id="searchBox" placeholder="Search">
@@ -22,13 +26,23 @@
     <div id="homepage-container">
         <div id="sideNavBar-container">
             <div id="tabs-container">
-                <div id="homeTab" class="tabs">
+                <div id="homeTab">
                     <img src="images/homepage/home_icon.svg" id="homeIcon" class="tabsIcon">
-                    <p class="tabsName">Home</p>
+                    <a class="tabsName" href="#top"><p>Home</p></a>
                 </div>
-                <div id="reservationsTab" class="tabs">
+                <div id="reservationsTab">
                     <img src="images/homepage/reservations_icon.svg" id="reservationsIcon" class="tabsIcon">
                     <p class="tabsName">Reservations</p>
+                </div>
+            </div>
+            <div id="drop-up-account-menu">
+                <div id="change-user-container" class="drop-up-menu-list">
+                    <img src="images/homepage/user-icon.svg" id="user-icon" class="drop-up-icon">
+                    <p>Edit profile</p>
+                </div>
+                <div id="log-out-container" class="drop-up-menu-list">
+                    <img src="images/homepage/log-out.svg" id="log-out-icon" class="drop-up-icon">
+                    <p>Log out</p>
                 </div>
             </div>
             <div id="accounts-container">
@@ -39,7 +53,7 @@
                     <p id="account-name">John Doe</p>
                 </div>
                 <div id="more-accounts-container">
-                    <img src="images/homepage/more-horizontal.svg" id="more-icon">
+                    <img src="images/homepage/more-horizontal.svg" id="more-icon" onclick="toggleDropUpMenu()">
                 </div>
             </div>
         </div>
@@ -61,5 +75,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let dropUpMenu = document.getElementById("drop-up-account-menu");
+
+        function toggleDropUpMenu(){
+            dropUpMenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 </html>

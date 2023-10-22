@@ -7,10 +7,14 @@
 <body>
     <div id="topNavBar-container">
         <div id="logo-name">
-            <img id="logo" src="../images/homepage/slotgeek-logo.svg">
+            <a href="../index.html">
+                <img id="logo" src="../images/homepage/slotgeek-logo.svg">
+            </a>
         </div>
         <div id="slotgeek">
-            SlotGeek
+            <a href="../index.html">
+                SlotGeek
+            </a>
         </div>
         <div id="searchBoxDiv">
             <input type="text" id="searchBox" placeholder="Search">
@@ -24,9 +28,19 @@
                     <img src="../images/homepage/home_icon.svg" id="homeIcon" class="tabsIcon">
                     <a class="tabsName" href="../index.html"><p>Home</p></a>
                 </div>
-                <div id="reservationsTab" class="tabs">
+                <div id="reservationsTab">
                     <img src="../images/homepage/reservations_icon.svg" id="reservationsIcon" class="tabsIcon">
                     <p class="tabsName">Reservations</p>
+                </div>
+            </div>
+            <div id="drop-up-account-menu">
+                <div id="change-user-container" class="drop-up-menu-list">
+                    <img src="../images/homepage/user-icon.svg" id="user-icon" class="drop-up-icon">
+                    <p>Edit profile</p>
+                </div>
+                <div id="log-out-container" class="drop-up-menu-list">
+                    <img src="../images/homepage/log-out.svg" id="log-out-icon" class="drop-up-icon">
+                    <p>Log out</p>
                 </div>
             </div>
             <div id="accounts-container">
@@ -37,7 +51,7 @@
                     <p id="account-name">John Doe</p>
                 </div>
                 <div id="more-accounts-container">
-                    <img src="../images/homepage/more-horizontal.svg" id="more-icon">
+                    <img src="../images/homepage/more-horizontal.svg" id="more-icon" onclick="toggleDropUpMenu()">
                 </div>
             </div>
         </div>
@@ -302,5 +316,12 @@
     </div>
 
     <script src="../js/reserve.js" type="text/javascript"></script>
+    <script>
+        let dropUpMenu = document.getElementById("drop-up-account-menu");
+    
+        function toggleDropUpMenu(){
+            dropUpMenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 </html>
