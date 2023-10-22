@@ -2,12 +2,53 @@
 <html>
 <head>
     <title>Lab Seat Reservation</title>
-    <link rel="stylesheet" href="reserve.css">
+    <link rel="stylesheet" href="../css/reserve.css">
 </head>
 <body>
+    <div id="topNavBar-container">
+        <div id="logo-name">
+            <img id="logo" src="../images/homepage/slotgeek-logo.svg">
+        </div>
+        <div id="slotgeek">
+            SlotGeek
+        </div>
+        <div id="searchBoxDiv">
+            <input type="text" id="searchBox" placeholder="Search">
+            <img id="searchIcon" src="../images/homepage/search.svg">
+        </div>
+    </div>
+    <div id="homepage-container">
+        <div id="sideNavBar-container">
+            <div id="tabs-container">
+                <div id="homeTab">
+                    <img src="../images/homepage/home_icon.svg" id="homeIcon" class="tabsIcon">
+                    <a class="tabsName" href="../index.html"><p>Home</p></a>
+                </div>
+                <div id="reservationsTab" class="tabs">
+                    <img src="../images/homepage/reservations_icon.svg" id="reservationsIcon" class="tabsIcon">
+                    <p class="tabsName">Reservations</p>
+                </div>
+            </div>
+            <div id="accounts-container">
+                <div id="profile-container">
+                    <img src="../images/homepage/profile-picture.png" id="profile-icon">
+                </div>
+                <div id="accountName-container">
+                    <p id="account-name">John Doe</p>
+                </div>
+                <div id="more-accounts-container">
+                    <img src="../images/homepage/more-horizontal.svg" id="more-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="title_container">
-        <div>Selected Lab: Laboratory 1</div>
-    
+        <div class="add-space">Selected Lab:</div>
+        <img class="laboratory-picture" src="../images/homepage/laboratory-1.jpg">
+        <div>Laboratory 1</div>
+        <div class="room">Room 101</div> 
+
         <h1>Pick a Date</h1>
         <input type="date" id="datePicker">
         <div>Selected date: <span id="selectedFormattedDate"></span></div>
@@ -24,52 +65,52 @@
                     <p> Laboratory Seats </p>
                     <div class="seat-buttons">
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 1</div>
-                            <div class="status-message">Status: Available</div>
+                            <div class="status-message">Status: Reserved by Kanye West</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairReserved.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 2</div>
-                            <div class="status-message">Status: Reserved</div>
+                            <div class="status-message">Status: Reserved by Kanye West</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 3</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 4</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 5</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 6</div>
-                            <div class="status-message">Status: Available</div>
+                            <div class="status-message">Status: Reserved by Peter Gory</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairReserved.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 7</div>
-                            <div class="status-message">Status: Reserved</div>
+                            <div class="status-message">Status: Reserved by Peter Gory</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 8</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 9</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 10</div>
                             <div class="status-message">Status: Available</div>
                         </div>
@@ -84,52 +125,52 @@
                     <p> Laboratory Seats </p>
                     <div class="seat-buttons">
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 1</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairReserved.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 2</div>
-                            <div class="status-message">Status: Reserved</div>
+                            <div class="status-message">Status: Reserved by Dory</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 3</div>
-                            <div class="status-message">Status: Available</div>
+                            <div class="status-message">Status: Reserved by Dory</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 4</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 5</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 6</div>
+                            <div class="status-message">Status: Reserved by Mr Loner</div>
+                        </div>
+                        <div class="seat-column">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
+                            <div>Seat 7</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairReserved.png">
-                            <div>Seat 7</div>
-                            <div class="status-message">Status: Reserved</div>
-                        </div>
-                        <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 8</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 9</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 10</div>
                             <div class="status-message">Status: Available</div>
                         </div>
@@ -144,52 +185,52 @@
                     <p> Laboratory Seats </p>
                     <div class="seat-buttons">
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 1</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairReserved.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 2</div>
-                            <div class="status-message">Status: Reserved</div>
+                            <div class="status-message">Status: Magic Mike</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 3</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 4</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 5</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 6</div>
+                            <div class="status-message">Status: Reserved by Magic Mike</div>
+                        </div>
+                        <div class="seat-column">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
+                            <div>Seat 7</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairReserved.png">
-                            <div>Seat 7</div>
-                            <div class="status-message">Status: Reserved</div>
-                        </div>
-                        <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 8</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 9</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 10</div>
                             <div class="status-message">Status: Available</div>
                         </div>
@@ -204,52 +245,52 @@
                     <p> Laboratory Seats </p>
                     <div class="seat-buttons">
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 1</div>
+                            <div class="status-message">Status: Reserved by PomPom</div>
+                        </div>
+                        <div class="seat-column">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
+                            <div>Seat 2</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairReserved.png">
-                            <div>Seat 2</div>
-                            <div class="status-message">Status: Reserved</div>
-                        </div>
-                        <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 3</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 4</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairReserved.png">
                             <div>Seat 5</div>
-                            <div class="status-message">Status: Available</div>
+                            <div class="status-message">Status: Reserved by Killua</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 6</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairReserved.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 7</div>
-                            <div class="status-message">Status: Reserved</div>
+                            <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 8</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 9</div>
                             <div class="status-message">Status: Available</div>
                         </div>
                         <div class="seat-column">
-                            <img class="chairIcon" src="iconChairAvailable.png">
+                            <img class="chairIcon" src="../images/reserve/iconChairAvailable.png">
                             <div>Seat 10</div>
                             <div class="status-message">Status: Available</div>
                         </div>
@@ -260,6 +301,6 @@
         </div>
     </div>
 
-    <script src="reserve.js" type="text/javascript"></script>
+    <script src="../js/reserve.js" type="text/javascript"></script>
 </body>
 </html>
