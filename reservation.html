@@ -4,28 +4,44 @@
         <title>SlotGeek</title>
         <link rel="stylesheet" href="./css/style-reservation.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	    <script src="./js/script.js"></script>
     </head>
     <body>
-        <div class="parent">
-            <nav id="title-bar">
-                <span id="icon">
-                    <img id="logo" src="images/homepage/slotgeek-logo.svg">
-                </span>
-                <span id="title">SlotGeek</span>
-                <span id="right-text">About</span>
-            </nav>
-
+            <div id="topNavBar-container">
+                <div id="logo-name">
+                    <a href="#top">
+                        <img id="logo" src="images/homepage/slotgeek-logo.svg">
+                    </a>
+                </div>
+                <div id="slotgeek">
+                    <a href="#top">
+                        SlotGeek
+                    </a>
+                </div>
+                <div id="searchBoxDiv">
+                    <input type="text" id="searchBox" placeholder="Search">
+                    <img id="searchIcon" src="images/homepage/search.svg">
+                </div>
+            </div>
             <div id="homepage-container">
                 <div id="sideNavBar-container">
                     <div id="tabs-container">
                         <div id="homeTab">
-                            <img src="images/homepage/home-icon.svg" id="homeIcon" class="tabsIcon">
-                            <p class="tabsName">Home</p>
+                            <img src="images/homepage/home_icon.svg" id="homeIcon" class="tabsIcon">
+                            <a class="tabsName" href="index.html"><p>Home</p></a>
                         </div>
                         <div id="reservationsTab">
-                            <img src="images/homepage/reservations-icon.svg" id="reservationsIcon" class="tabsIcon">
-                            <p class="tabsName">Reservations</p>
+                            <img src="images/homepage/reservations_icon.svg" id="reservationsIcon" class="tabsIcon">
+                            <a href="reservation.html"><p class="tabsName">Reservations</p></a>
+                        </div>
+                    </div>
+                    <div id="drop-up-account-menu">
+                        <div id="change-user-container" class="drop-up-menu-list">
+                            <img src="images/homepage/user-icon.svg" id="user-icon" class="drop-up-icon">
+                            <p>Edit profile</p>
+                        </div>
+                        <div id="log-out-container" class="drop-up-menu-list">
+                            <img src="images/homepage/log-out.svg" id="log-out-icon" class="drop-up-icon">
+                            <p>Log out</p>
                         </div>
                     </div>
                     <div id="accounts-container">
@@ -41,52 +57,51 @@
                     </div>
                 </div>
             </div>
-
             <div id="center-pane">
                 <div id="reserve-container">
                     <!-- <img id="comp-sleep" src="images/homepage/sleeping-laptop.png">
                     <p class='filler-text' id="no-reserve">You haven't made any reservations in any of the labs yet!</p> -->
 
                     <p class='filler-text'>
-                        Here are your current resrvations:
+                        Here are your current reservations:
                         <div class ="lab-reservations" id="reserve-1">
-                            <p>Lab Number: 123</p>
-                            <p>Room Number: 1A</p>
-                            <p>Date: October 23 2023</p>
-                            <p>Time: 7:00AM-8:30AM</p>
-                            <p>Seat Number: Terminal 1</p>
+                            <p>Lab Number: <span>3</span></p>
+                            <p>Room Number: <span>103</span></p>
+                            <p>Date: <span>October 23, 2023</span></p>
+                            <p>Time: <span>1:30PM - 2:00PM</span></p>
+                            <p>Seat Number: <span>Terminal 1</span></p>
                         </div>
                         <div class ="lab-reservations" id="reserve-2">
-                            <p>Lab Number: 456</p>
-                            <p>Room Number: 2B</p>
-                            <p>Date: October 24 2023</p>
-                            <p>Time: 3:00PM-4:30PM</p>
-                            <p>Seat Number: Terminal 2</p>
+                            <p>Lab Number: <span>2</span></p>
+                            <p>Room Number: <span>102</span></p>
+                            <p>Date: <span>October 24, 2023</span></p>
+                            <p>Time: <span>1:00PM - 1:30PM</span></p>
+                            <p>Seat Number: <span>Terminal 2</span></p>
                         </div>
                         <div  class ="lab-reservations"id="reserve-3">
-                            <p>Lab Number: 789</p>
-                            <p>Room Number: 3C</p>
-                            <p>Date: October 25 2023</p>
-                            <p>Time: 9:00AM-9:30AM</p>
-                            <p>Seat Number: Terminal 3</p>
+                            <p>Lab Number: <span>1</span></p>
+                            <p>Room Number: <span>101</span></p>
+                            <p>Date: <span>October 25, 2023</span></p>
+                            <p>Time: <span>12:00PM - 12:30PM</span></p>
+                            <p>Seat Number: <span>Terminal 5</span></p>
                         </div>
                         <div  class ="lab-reservations"id="reserve-4">
-                            <p>Lab Number: 123</p>
-                            <p>Room Number: 4D</p>
-                            <p>Date: October 26 2023</p>
-                            <p>Time: 10:00AM-12:30PM</p>
-                            <p>Seat Number: Terminal 4</p>
+                            <p>Lab Number: <span>1</span></p>
+                            <p>Room Number: <span>101</span></p>
+                            <p>Date: <span>October 26, 2023</span></p>
+                            <p>Time: <span>12:30PM - 1:00PM</span></p>
+                            <p>Seat Number: <span>Terminal 4</span></p>
                         </div>
                         <div class ="lab-reservations" id="reserve-5">
-                            <p>Lab Number: 456</p>
-                            <p>Room Number: 5E</p>
-                            <p>Date: October 27 2023</p>
-                            <p>Time: 11:30AM-12:00NN</p>
-                            <p>Seat Number: Terminal 5</p>
+                            <p>Lab Number: <span>2</span></p>
+                            <p>Room Number: <span>102</span></p>
+                            <p>Date: <span>October 27, 2023</span></p>
+                            <p>Time: <span>12:30PM - 1:00PM</span></p>
+                            <p>Seat Number: <span>Terminal 5</span></p>
                         </div>
                     </p>
                 </div>
             </div>
-        </div>
+            <script src="../js/reserve.js" type="text/javascript"></script>
     </body>
 </html>
