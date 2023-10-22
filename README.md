@@ -60,10 +60,6 @@ Welcome to the Lab Reservation System, a web application designed to manage rese
 ### Search for Users / Free Slots
 - Users can view all available slots for a given date, time, and laboratory.
 
-### General
-- The system provides an intuitive user experience, easy navigation, and easy access to information.
-- The visual design is cohesive, consistent, and suits the theme of the application.
-
 ---
 
 ## User Accounts
