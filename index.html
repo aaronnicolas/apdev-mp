@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>SlotGeek</title>
 </head>
 <body>
     <div id="topNavBar-container">
         <div id="logo-name">
-            <a href="index.html">
+            <a href="#top">
                 <img id="logo" src="images/homepage/slotgeek-logo.svg">
             </a>
         </div>
         <div id="slotgeek">
-            <a href="index.html">
+            <a href="#top">
                 ReservaLabs
             </a>
         </div>
@@ -26,7 +26,7 @@
     <div id="homepage-container">
         <div id="sideNavBar-container">
             <div id="tabs-container">
-                <div id="homeTab" class="side-nav-tabs" onclick="window.location.href='index.html';">
+                <div id="homeTab" class="side-nav-tabs" onclick="window.location.href='#top';">
                     <img src="images/homepage/home_icon.svg" id="homeIcon" class="tabsIcon">
                     <p class="tabsName">Home</p>
                 </div>
@@ -57,20 +57,25 @@
                 </div>
             </div>
         </div>
-        <div id="edit-profile-section">
-            <div id="user-profile">
-                <img src="images/homepage/profile-picture.png" id="profile-pic-icon">
+        <div id="laboratories-container">
+            <div id="laboratory-one" class="laboratory-card">
+                <a href="reserveSystem/reserveLab1.html"><img src="images/homepage/laboratory-1.jpg" class="laboratory-picture"></a>
+                <div class="laboratory-name">Laboratory 1</div>
+                <div>Room 101</div>
             </div>
-            <div id="user-details">
-                <p id="user-fullname">John Doe</p>
-                <button id="edit-profile-button">Edit Profile</button>
-                <button id="log-out-button" onclick="window.location.href='login.html';">Log Out</button>
-                <hr>
-                <p id="profile-description">Undergrad Student at DLSU</p>
+            <div id="laboratory-two" class="laboratory-card">
+                <a href="reserveSystem/reserveLab2.html"><img src="images/homepage/laboratory-2.jpg" class="laboratory-picture"></a>
+                <div class="laboratory-name">Laboratory 2</div>
+                <div>Room 102</div>
+            </div>
+            <div id="laboratory-three" class="laboratory-card">
+                <a href="reserveSystem/reserveLab3.html"><img src="images/homepage/laboratory-3.jpg" class="laboratory-picture"></a>
+                <div class="laboratory-name">Laboratory 3</div>
+                <div>Room 103</div>
             </div>
         </div>
     </div>
 
-    <script src="js/profile.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
 </body>
 </html>
