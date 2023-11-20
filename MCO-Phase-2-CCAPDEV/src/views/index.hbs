@@ -1,0 +1,14 @@
+{{>header}}
+    <div id="homepage-container">
+        {{>sidebar}}
+        <div id="laboratories-container">
+            {{#each laboratories}}
+                <div id="{{id}}" class="laboratory-card">
+                    <a href="{{link}}"><img src="/static/{{imageSrc}}" class="laboratory-picture"></a>
+                    <div class="laboratory-name">{{name}}</div>
+                    <div>{{room}}</div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+<script src="/static/js/index.js"></script>

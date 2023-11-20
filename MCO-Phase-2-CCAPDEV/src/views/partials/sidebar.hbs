@@ -1,0 +1,35 @@
+<div id="sideNavBar-container">
+    <div id="tabs-container">
+        <div id="homeTab" class="side-nav-tabs" onclick="window.location.href='/';">
+            <img src="/static/images/homepage/home_icon.svg" id="homeIcon" class="tabsIcon">
+            <p class="tabsName">Home</p>
+        </div>
+        <div id="reservationsTab" class="side-nav-tabs" onclick="window.location.href='/reservelist';">
+            <img src="/static/images/homepage/reservations_icon.svg" id="reservationsIcon" class="tabsIcon">
+            <p class="tabsName">Reservations</p>
+        </div>
+    </div>
+
+    <div id="drop-up-account-menu">
+        <div id="change-user-container" class="drop-up-menu-list" onclick="window.location.href='/profile';">
+            <img src="/static/images/homepage/user-icon.svg" id="user-icon" class="drop-up-icon">
+            <p>Edit profile</p>
+        </div>
+        <div id="log-out-container" class="drop-up-menu-list" onclick="window.location.href='/login';">
+            <img src="/static/images/homepage/log-out.svg" id="log-out-icon" class="drop-up-icon">
+            <p>Log out</p>
+        </div>
+    </div>
+
+    <div id="accounts-container">
+        <div id="profile-container">
+            <img src="/static/images/homepage/profile-picture.png" id="profile-icon">
+        </div>
+        <div id="accountName-container">
+            <p id="account-name">{{username}}</p>
+        </div>
+        <div id="more-accounts-container">
+            <img src="/static/images/homepage/more-horizontal.svg" id="more-icon" onclick="toggleDropUpMenu()">
+        </div>
+    </div>
+</div>

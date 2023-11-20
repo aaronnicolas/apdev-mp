@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ReservaLabs</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/static/js/reserve_list.js"></script>
+    </head>
+    <body>
+        <div id="topNavBar-container">
+            <div id="logo-name">
+                <a href="/">
+                    <img id="logo" src="/static/images/homepage/slotgeek-logo.svg">
+                </a>
+            </div>
+            <div id="slotgeek">
+                <a href="/">
+                    ReservaLabs
+                </a>
+            </div>
+            <div class="options-container">
+                <div class="options" id="viewButton" onclick="switchOptions('view', this)">View</div>
+                <div class="options" id="editButton" onclick="switchOptions('edit', this)">Edit</div>
+                <div class="options" id="delButton" onclick="switchOptions('delete', this)">Delete</div>
+            </div>
+        </div>
+        <div id="homepage-container">
+            <div id="sideNavBar-container">
+                <div id="tabs-container">
+                    <div id="homeTab" class="side-nav-tabs" onclick="window.location.href='/';">
+                        <img src="/static/images/homepage/home_icon.svg" id="homeIcon" class="tabsIcon">
+                        <p class="tabsName">Home</p>
+                    </div>
+                    <div id="reservationsTab" class="side-nav-tabs" onclick="window.location.href='/reservelist';">
+                        <img src="/static/images/homepage/reservations_icon.svg" id="reservationsIcon" class="tabsIcon">
+                        <p class="tabsName">Reservations</p>
+                    </div>
+                </div>
+                <div id="drop-up-account-menu">
+                    <div id="change-user-container" class="drop-up-menu-list" onclick="window.location.href='/profile';">
+                        <img src="/static/images/homepage/user-icon.svg" id="user-icon" class="drop-up-icon">
+                        <p>Edit profile</p>
+                    </div>
+                    <div id="log-out-container" class="drop-up-menu-list" onclick="window.location.href='/login';">
+                        <img src="/static/images/homepage/log-out.svg" id="log-out-icon" class="drop-up-icon">
+                        <p>Log out</p>
+                    </div>
+                </div>
+                <div id="accounts-container">
+                    <div id="profile-container">
+                        <img src="/static/images/homepage/profile-picture.png" id="profile-icon">
+                    </div>
+                    <div id="accountName-container">
+                        <p id="account-name">{{username}}</p>
+                    </div>
+                    <div id="more-accounts-container">
+                        <img src="/static/images/homepage/more-horizontal.svg" id="more-icon" onclick="toggleDropUpMenu()">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="center-pane">
+                <div id="reserve-container">
+                    <p class='filler-text'>Here are your current reservations:</p>
+                    <div class="edit-reservation">
+                        <div class="title_container">
+                            <div class="add-space">Edit Reservation</div>
+                            <div class="lab-pic-container">
+                                <img class="laboratory-picture" id="lab-1" src="/static/images/homepage/laboratory-1.jpg" onclick="switchLab(1)">
+                                <img class="laboratory-picture" id="lab-2" src="/static/images/homepage/laboratory-2.jpg" onclick="switchLab(2)">
+                                <img class="laboratory-picture" id="lab-3" src="/static/images/homepage/laboratory-3.jpg" onclick="switchLab(3)">
+                            </div> 
+                    
+                            <h1>Pick a Date</h1>
+                            <input type="date" id="datePicker">
+                        
+                            <h1>Lab Seat Availability</h1>
+                        </div>
+                        
+                        <div class="container">
+                            <div class="tabs">
+                                {{#each tabs}}
+                                    <div class="tabby-tab">
+                                        <input type="radio" id="tab-{{tabNum}}" name="tabby-tabs" {{#if checked}}checked{{/if}}>
+                                        <label for="tab-{{tabNum}}">{{time}}</label>
+                                        <div class="tabby-content">
+                                            <p> Laboratory Seats </p>
+                                            <div class="seat-buttons">
+                                                {{#each seats}}
+                                                    <div class="seat-column" data-time="{{../time}}">
+                                                        <img class="chairIcon" src="{{image}}">
+                                                        <div>{{seatName}}</div>
+                                                        <div class="status-message">Status: {{status}}</div>
+                                                    </div>
+                                                {{/each}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{/each}}
+                            </div>
+                            <button id="reserveButton" class="button-52" role="button">Save changes</button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="chosen-lab">
+                        <p>Lab Number: <span class="labNum">3</span></p>
+                        <div class="lab-date-time-seat">
+                            <div class="lab-reservations">
+                                <p>Date: <span class="reserveDate">October 23, 2023</span></p>
+                                <p>Time: <span class="reserveTime">1:30PM - 2:00PM</span></p>
+                                <p>Seats: <span class="seatNum">1, 2, 3</span></p>
+                            </div>
+                            <div class="lab-reservations">
+                                <p>Date: <span class="reserveDate">October 24, 2023</span></p>
+                                <p>Time: <span class="reserveTime">12:30PM - 1:00PM</span></p>
+                                <p>Seats: <span class="seatNum">2, 5, 7</span></p>
+                            </div>
+                            <div class="lab-reservations">
+                                <p>Date: <span class="reserveDate">October 25, 2023</span></p>
+                                <p>Time: <span class="reserveTime">1:30PM - 2:00PM</span></p>
+                                <p>Seats: <span class="seatNum">1, 2, 3</span></p>
+                            </div>
+                            <div class="lab-reservations">
+                                <p>Date: <span class="reserveDate">October 26, 2023</span></p>
+                                <p>Time: <span class="reserveTime">12:30PM - 1:00PM</span></p>
+                                <p>Seats: <span class="seatNum">2, 5, 7</span></p>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    {{#each reservations}}
+                    <div class="lab-reservation-container">
+                        <div class="lab-reservations">
+                        <p>Lab Number: <span class="labNum">{{labNum}}</span></p>
+                        <p>Room Number: <span class="roomNum">{{roomNum}}</span></p>
+                        <p>Date: <span class="reserveDate">{{reserveDate}}</span></p>
+                        <!-- For displaying the time slots and seat numbers -->
+                        <div class="time-seat-container">
+                            {{#each timeSeatReservations}}
+                            <div class="time-seat-reservations">
+                                <p>Time: <span class="reserveTime">{{reserveTime}}</span></p>
+                                <p>Seat Number: <span class="seatNum">{{seatNum}}</span></p>
+                            </div>
+                            {{/each}}
+                        </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
